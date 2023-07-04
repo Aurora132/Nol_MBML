@@ -22,7 +22,6 @@ This project provides a self-supervised learning approach for performing multi-m
 - [data_loader.py](./data_loader.py): data loader definition for model training.
 - [train_pre.py](./train_pre.py): main code for the first training stage.
 - [train_sec.py](./train_sec.py): main code for the second training stage.
-- [train_sec.py](./train_sec.py): main code for the second training stage.
 - [train_SECT_DECT.py](./train_SECT_DECT.py): main code for training the DECT imaging generation module.
 - [decompose_demo.py](./decompose_demo.py): decompose the demo DECT data into four basic materials (Adipose, Air, Muscle, and Iodine).
 - You can perform other material decomposition by changing the weights and the input data here.
