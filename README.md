@@ -28,3 +28,28 @@ This project provides a self-supervised learning approach for performing multi-m
 - You can perform other material decomposition by changing the weights and the input data here.
 - [checkpoints/SECT_DECT.pth](./checkpoints/SECT_DECT.pth): trained weights for DECT data generation.
 - [checkpoints/decompose_four.pth](./checkpoints/decompose_four.pth): trained weights for decomposing DECT data into four basic materials (Adipose, Air, Muscle, and Iodine).
+
+
+# 3. System Requirements
+
+## Prerequisites
+- Ubuntu 20.04
+- NVIDIA GPU + CUDA (Geforce RTX 3090 with 24GB memory, CUDA 11.4)
+
+## Package Versions
+- python 3.8
+- pytorch 1.10.1
+- torchvision 0.11.2
+- numpy 1.19.5
+
+# 4. Instructions for Use
+
+## Training
+- Run `python train_pre.py` to perform the first training process with the default setting. Then change the parameter `pretrain_dir` and run `python train_sec.py` to begin the second training process.
+- Run `python train_SECT_DECT.py` to start the DECT imaging generation module training stage.
+
+## Test demo
+Run `python decompose_demo.py` to test the trained model deposited in `./checkpoints/decompose_four/` on the data in `./data/demo_data/`. Image results are stored in `./decompose_result/`.
+
+# 5. License
+This project is covered under the BSD-3-Clause License.
