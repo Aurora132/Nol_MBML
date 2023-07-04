@@ -25,8 +25,8 @@ This project provides a self-supervised learning approach for performing multi-m
 - [train_SECT_DECT.py](./train_SECT_DECT.py): main code for training the DECT imaging generation module.
 - [decompose_demo.py](./decompose_demo.py): decompose the demo DECT data into four basic materials (Adipose, Air, Muscle, and Iodine).
 - You can perform other material decomposition by changing the weights and the input data here.
-- [checkpoints/SECT_DECT.pth](./checkpoints/SECT_DECT.pth): trained weights for DECT data generation.
-- [checkpoints/decompose_four.pth](./checkpoints/decompose_four.pth): trained weights for decomposing DECT data into four basic materials (Adipose, Air, Muscle, and Iodine).
+- [checkpoints/SECT_DECT.pth](./checkpoints/SECT_DECT.pth): trained weights for DECT data generation. [Download link](https://1drv.ms/u/s!Al8vukYxw_dFgzyl33BEYzpgddcH?e=iHeWYA)
+- [checkpoints/decompose_four.pth](./checkpoints/decompose_four.pth): trained weights for decomposing DECT data into four basic materials (Adipose, Air, Muscle, and Iodine). [Download link](https://1drv.ms/u/s!Al8vukYxw_dFgz3BxKMYQHynvANQ?e=ilKqyp)
 
 
 # 3. System Requirements
