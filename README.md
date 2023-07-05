@@ -33,7 +33,7 @@ This project provides a self-supervised learning approach for performing multi-m
 
 ## Prerequisites
 - Ubuntu 18.04
-- NVIDIA GPU + CUDA (Geforce RTX 3090 with 24GB memory, CUDA 11.4)
+- NVIDIA GPU + CUDA (Geforce RTX 3090 with 24GB memory, CUDA 10.1)
 
 ## Package Versions
 - python 3.7+
