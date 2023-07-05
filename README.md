@@ -40,6 +40,7 @@ This project provides a self-supervised learning approach for performing multi-m
 - pytorch 1.10.1
 - torchvision 0.11.2
 - numpy 1.19.5
+- opencv-python 4.6.0.66
 
 # 4. Instructions for Use
 
