@@ -35,7 +35,7 @@ mycmap2 = colors.LinearSegmentedColormap.from_list('mycmap2', ['#000000', '#0BFF
 mycmap3 = colors.LinearSegmentedColormap.from_list('mycmap3', ['#000000', '#C604C5'])
 mycmap4 = colors.LinearSegmentedColormap.from_list('mycmap4', ['#000000', '#FF8D01'])
 
-q = random.randint(0, 4)
+q = random.randint(0, 3)
 
 kv_100 = np.load(train_fns_100[q])
 kv_140 = np.load(train_fns_140[q])
