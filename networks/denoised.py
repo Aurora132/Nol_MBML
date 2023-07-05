@@ -69,7 +69,7 @@ class Denoise(nn.Module):
 
 if __name__ == "__main__":
     import numpy as np
-    x = torch.from_numpy(np.zeros((10, 1, 24, 24), dtype=np.float32))  #from_numpy从numpy.ndarray创建一个张量
+    x = torch.from_numpy(np.zeros((10, 1, 24, 24), dtype=np.float32))  
     print(x.shape)
     net = Denoise(n_channels=64)
     y = net(x)
