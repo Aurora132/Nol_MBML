@@ -33,13 +33,14 @@ This project provides a self-supervised learning approach for performing multi-m
 
 ## Prerequisites
 - Ubuntu 18.04
-- NVIDIA GPU + CUDA (Geforce RTX 3090 with 24GB memory, CUDA 10.1)
+- NVIDIA GPU + CUDA (Geforce RTX 3090 with 24GB memory, CUDA 11.4)
 
 ## Package Versions
-- python 3.7+
-- pytorch 1.7.1+
-- torchvision 0.8.2+
-- opencv-python 4.1.2.30+
+- python 3.8
+- pytorch 1.10.1
+- torchvision 0.11.2
+- opencv-python 4.6.0.66
+- numpy 1.19.5
 
 # 4. Instructions for Use
 
