@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib import colors
 import matplotlib
 import torch
-
+import random
 
 def window(image, up=250, down=-250):
     image = image * 1000
@@ -27,16 +27,18 @@ model = convnext_tiny(num_classes=4).cuda()
 model.load_state_dict(torch.load('./checkpoints/decompose_four.pth'))
 # change your data here
 data_dir = './demo_data'
-train_fns_100 = os.path.join(data_dir, '100kv/001.npy')
-train_fns_140 = os.path.join(data_dir, '140kv/001.npy')
+train_fns_100 = sorted(glob.glob(os.path.join(data_dir, '100kv/*.npy')))
+train_fns_140 = sorted(glob.glob(os.path.join(data_dir, '140kv/*.npy')))
 
 mycmap1 = colors.LinearSegmentedColormap.from_list('mycmap1', ['#000000', '#00FFFF'])
 mycmap2 = colors.LinearSegmentedColormap.from_list('mycmap2', ['#000000', '#0BFF16'])
 mycmap3 = colors.LinearSegmentedColormap.from_list('mycmap3', ['#000000', '#C604C5'])
 mycmap4 = colors.LinearSegmentedColormap.from_list('mycmap4', ['#000000', '#FF8D01'])
 
-kv_100 = np.load(train_fns_100)
-kv_140 = np.load(train_fns_140)
+q = random.randint(0, 4)
+
+kv_100 = np.load(train_fns_100[q])
+kv_140 = np.load(train_fns_140[q])
 image_input = np.stack((kv_100, kv_140), axis=0).astype(np.float32)
 tensor_input = torch.from_numpy(image_input)
 tensor_input = torch.unsqueeze(tensor_input, dim=0).cuda()
